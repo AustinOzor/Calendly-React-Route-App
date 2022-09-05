@@ -1,0 +1,679 @@
+html,body {
+  margin: 0;
+      font-family: Gilroy, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.effect {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.scrolling {
+  animation: marquee 2s linear infinite;
+  display: inline-block;
+  padding-right: 10px;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to { 
+    transform: translateX(-100%);
+  }
+}
+.nav--logo{
+  margin-right: 5rem;
+}
+.nav{
+      box-shadow: 2px 2px 20px  rgba(70, 69, 69, 0.2);
+}
+.links{
+  text-decoration: none;
+  /* list-style: none; */
+  color: black;
+  font-weight: bold;
+  padding-inline: 12px;
+}
+.links:hover{
+  color: rgb(0, 107, 255);;
+}
+.modal{
+  width: 600px;
+}
+
+.modal-title{
+    font-size: 1.75rem;
+    line-height: 1.4;
+    text-align: center;
+    color: rgb(29, 52, 75);
+    font-weight: 700;
+
+  
+}
+.modal-form{
+  padding: 10px 30px;
+}
+.modal-btn{
+  width: 100%;
+  margin: 15px 0;
+  height: 60px;
+  color: rgb(11, 53, 88);;
+  font-size: 12px;
+}
+.getstared-image{
+  max-width: 50px;
+  height: 65px;
+}
+/*HEADER*/
+.header{
+  margin-top: 15rem;
+  gap: 30px;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.title{
+  font-size: 4.20875rem;
+    line-height: 1.2;
+    font-weight: 900;
+    white-space: pre-line;
+    text-align: left;
+    color: rgb(11, 53, 88);
+    margin-bottom: 32px;
+}
+#ahead{
+  color:rgb(0, 107, 255);
+  font-size: 4.20875rem;
+     font-weight: 900;
+}
+.header--p{
+  color: rgb(71, 103, 136);
+  font-size: 1.3rem;
+  width:100%;
+  height: auto;
+  padding-bottom: 32px;
+  line-height: 1.5;
+
+}
+.header--image{
+  width: 100%;
+  height: auto;
+  padding-inline: 2rem;
+}
+
+.sign--up{
+  /* position: absolute; */
+    width: 100%;
+    height: 64px;
+    border-radius: 25px;
+    box-sizing: border-box;
+    background: rgb(225, 221, 221);
+    padding: 0px 64px 0px 32px;
+    font-weight: 500;
+    font-size: 1.125rem;
+    box-shadow: 2px 2px 20px  rgba(70, 69, 69, 0.3);
+}
+
+/*Brand Logos Sections*/
+.brands{
+      background-color: rgb(248, 248, 248);
+    background-position: center bottom;
+    
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    overflow: visible;
+    padding: 70px 40px;
+}
+.brand--logo{
+width: 100px;
+height: 50px;
+color: black;
+margin-right: 4rem;
+margin-left: 4rem;
+}
+/* .scrolling{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+} */
+.schedule{
+      font-size: 1.75rem;
+    line-height: 1.4;
+    text-align: center;
+    color: rgb(11, 53, 88);
+    font-weight: 900;
+    margin-bottom: 72px;
+    max-width: 570px;
+}
+#thousand{
+    color:rgb(0, 107, 255);
+}
+
+/*Getting Started*/
+.gstart{
+      font-size: 2.36875rem;
+    line-height: 1.4;
+    text-align: center;
+    color: rgb(11, 53, 88);
+    font-weight: 700;
+    margin-bottom: 48px;
+    max-width: 968px;
+    z-index: 10;
+    padding-block:30px;
+}
+.getbooked{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 0;
+  margin-block: 4rem;
+}
+.card--body{
+  padding: 24px 24px 16px;
+     box-shadow: 2px 2px 20px  rgba(70, 69, 69, 0.2);
+}
+.card--title{
+      text-align: left;
+    color: rgb(8, 41, 69);
+    font-size: 2rem;
+    line-height: 1.4;
+    font-weight: 700;
+    margin-bottom: 16px;
+    padding-block: 1rem;
+}
+.card--text{
+      text-align: left;
+    color: rgb(71, 103, 136);
+    font-size: 1.125rem;
+    line-height: 2;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+i{
+  color: rgb(0, 107, 255); 
+  font-weight: 400;
+}
+/*Scheduling*/
+.schedule--section{
+background-color:  rgb(248, 248, 248);
+padding-block: 60px;
+
+}
+.scheduling--title{
+  text-align: center;
+    font-size: 3.125rem;
+    line-height: 1.2;
+    font-weight: 900;
+    text-align: center;
+    color: rgb(29, 52, 75);
+    margin-bottom: 32px;
+}
+
+  .schedule--grid { margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, calc(47.5%)));
+    gap: 20px;
+    -webkit-box-pack: center;
+    justify-content: center;
+    padding: initial;
+} 
+.schedule--gridcard{
+  border-radius: 40px;
+ 
+}
+.schedule--gridcard:hover{
+    transform: scale(1.1);
+    transition: transform ease-in .8s;
+
+}
+.card--schedule:hover{
+  background-color: white;
+}
+.card--schedule{
+  background-color: rgba(248, 248, 248, 0.588); 
+  
+}
+
+@media screen and (min-width: 375px){
+  .scheduling--title{
+    font-size: 1.7rem;
+  }
+  .try-h2{
+    font-size: 1rem;
+    font-weight: 500;
+  }
+}
+
+/*Solutions*/
+.solutions{
+  padding-block: 5rem;   
+ background-color: rgba(240, 240, 240, 0.881)
+}
+.solution--grid{
+      margin: auto;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(260px, min(30%, 390px)));
+    gap: 20px;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: stretch;
+
+    padding: initial;
+    z-index: 10;
+}
+.solution--h3{
+    font-size: 2.36875rem;
+    line-height: 1.4;
+    text-align: center;
+    color: rgb(11, 53, 88);
+    font-weight: 700;
+    margin-bottom: 48px;
+}
+.s--p{
+    font-weight: 600;
+    text-align: center;
+    color: rgb(0, 107, 255);
+    font-size: 1rem;
+    line-height: 1.2;
+    letter-spacing: 1.25px;
+    text-transform: uppercase;
+}
+.solution-card{
+  border: none;
+  padding: 15px;
+}
+.solution-card:hover{
+  box-shadow: 2px 2px 20px  rgba(70, 69, 69, 0.2);
+}
+.learnmore{
+ 
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+/*BEST*/
+.best-section{
+  padding-block: 4rem;
+}
+.best{
+      font-size: 3.125rem;
+    line-height: 1.2;
+    font-weight: 900;
+    text-align: center;
+    color: rgb(29, 52, 75);
+    margin-bottom: 32px;
+}
+.best-p{
+      text-align: center;
+    color: rgb(66, 84, 102);
+    font-size: 1.5rem;
+    line-height: 1.4;
+    font-weight: 400;
+    margin-bottom: 24px;
+}
+.best-h6{
+  font-weight: 600;
+    text-align: left;
+    color: rgb(0, 107, 255);
+    font-size: 1rem;
+    line-height: 1.2;
+    letter-spacing: 1.25px;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+}
+.best-h2{
+  font-size: 1.75rem;
+    line-height: 1.4;
+    text-align: left;
+    color: rgb(29, 52, 75);
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+.workflow{
+      text-align: left;
+    color: rgb(66, 84, 102);
+    font-size: 1.125rem;
+    line-height: 1.6;
+    font-weight: 500;
+}
+.best-row{
+      width: 100%;
+    display: flex;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    gap: 20px;
+    padding-top: 64px;
+}
+.workflow--image{
+  width: 100%;
+  height: auto;
+}
+/*TIME AND DATE*/
+.timeanddate--image{
+   width: 100%;
+  height: auto;
+  padding-inline: 15px;
+}
+
+.timeanddate-row{
+      width: 100%;
+    display: flex;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    gap: 60px;
+    padding-bottom: 64px;
+}
+.events{
+  padding-bottom: 60px;
+}
+/*TRIAL*/
+.trial{
+  display: flex;
+  justify-content: center;
+    background-color: rgb(247, 250, 255);
+    background-position: center bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    -webkit-box-pack: center;
+    overflow: visible;
+    padding: 60px 40px;
+}
+.try-h2{
+     font-size: 3.125rem;
+    line-height: 1.2;
+    font-weight: 900;
+    text-align: center;
+    color: rgb(29, 52, 75);
+    margin-bottom: 40px;
+}
+.try-p{
+    text-align: center;
+    color: rgb(71, 103, 136);
+    font-size: 1.3rem;
+    line-height: 1.4;
+    font-weight: 400;
+    padding-block: 2rem;
+}
+.try-p2{
+  text-align: center;
+    color: rgb(71, 103, 136);
+    font-size: 1.3rem;
+    font-weight: 400;
+      width: 100%;
+    line-height: 1.71429;
+    height: auto;
+    padding-bottom: 32px;
+}
+.startfree-btn{
+  display: flex;  
+  justify-content: center;
+  align-self: center;
+}
+.try-link{
+  text-decoration: none;
+  color:rgb(0, 107, 255);
+  font-weight: bold;
+}
+.try{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+/*FOOTER*/
+.footer{
+  margin: 6rem;
+
+}
+@media screen and (max-width:990px) {
+  .footer{
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .footer--h3, .footer--p{
+   padding-left: 10px;
+  }
+  .footer--i{
+    text-align: center;
+    padding: 0;
+  }
+  .footer-img{
+    display: flex;
+    justify-content: center;
+  }
+  .foot--links{
+    font-size: 1.5rem;
+  }
+}
+
+.footer--h3{
+     font-size: 2.36875rem;
+    line-height: 1.4;
+    font-weight: 900;
+    text-align: left;
+    color: #0B3558;
+    padding-bottom: 16px;
+}
+.ehead{
+  color: #006BFF;
+  font-size: inherit;
+}
+.footer--p{
+    text-align: left;
+    color: #0B3558;
+    font-size: 1.125rem;
+    line-height: 1.71428571429;
+    font-weight: 400;
+    margin-bottom: 56px;
+}
+.form{
+  font-size: 1.2rem;
+  font-weight: bolder;
+  margin-bottom: 65px; 
+}
+.footer--img{
+  padding:5px ;
+}
+.footer--i{
+  color: black;
+  font-size: 1.2rem;
+  padding:8px 6px;
+  margin-top:3rem ;
+}
+.copyright{
+  color:rgb(133, 130, 130);
+  font-size: 13px;
+  padding-top:2rem ;
+}
+.footer h4{
+  font-weight: bolder;
+}
+.footer--nav{
+  text-align: left;
+  flex-wrap: nowrap;
+}
+.foot--links{
+    color: rgb(11, 53, 88);
+    font-size: 1rem;
+    line-height: 3;
+    text-decoration: none;
+}
+li{
+  list-style: none;
+}
+
+
+
+
+/*INDIVIDUAL COMPONENT STYLING*/
+
+.individual{
+  padding: 25px 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:0 ;
+}
+.individual--div{
+    padding-top: 5rem;
+
+}
+.individual--h2{
+    font-size: 3.125rem;
+    line-height: 1.2;
+    font-weight: 900;
+    white-space: pre-line;
+    text-align: left;
+    color: rgb(11, 53, 88);
+    margin-bottom: 32px;
+}
+.individual--span{
+   color:rgb(0, 107, 255);
+  font-size: 3rem;
+   font-weight: 900;
+}
+.individual--image{
+  width: 100%;
+  height: auto;
+  padding: 0 15px;
+}
+
+/*BOOKING*/
+.booking--section{
+  background-color: rgb(247, 250, 255);
+  padding: 5rem;
+}
+.booking--row{
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+.booking{
+   text-align: left;
+    color: rgb(86, 99, 111);
+    font-size: 1.1rem;
+    line-height: 1.6;
+    font-weight: 500;
+    max-width: 490px;
+    padding-bottom: 2rem;
+}
+.booking--content{
+  padding-top: 6rem;
+}
+.booking--image{
+  width: 100%;
+  height: auto;
+}
+.booking--h6,  .team--h6{
+font-weight: 600;
+    text-align: left;
+    color: rgb(0, 107, 255);
+    font-size: 1rem;
+    line-height: 1.2;
+    letter-spacing: 1.25px;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+}
+.booking--h2{
+font-size: 1.75rem;
+    line-height: 1.4;
+    text-align: left;
+    color: rgb(29, 52, 75);
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+
+
+
+/*CALENDAR*/
+.calendar--links{
+  font-weight: 500; 
+  font-size: 1rem;
+  padding:2px 0;
+  text-decoration: none;
+}
+.work--h6{
+  font-weight: 600;
+    text-align: center;
+    color: rgb(0, 107, 255);
+    font-size: 1rem;
+    line-height: 1.2;
+    letter-spacing: 1.25px;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+    z-index: 10;
+}
+.work--h3{
+  font-size: 2.36875rem;
+    line-height: 1.4;
+    text-align: center;
+    color: rgb(11, 53, 88);
+    font-weight: 700;
+    margin-bottom: 24px;
+    max-width: 770px;
+    z-index: 10;
+}
+.work--p{
+  width: 100%;
+    height: 100%;
+    text-align: center;
+    color: rgb(71, 103, 136);
+    font-size: 1.5rem;
+    line-height: 1.4;
+    max-width: 770px;
+    margin-bottom: 16px;
+    z-index: 10;
+}
+
+
+
+/*TEAMS COMPONENT*/
+.booking--section{
+  padding: 5rem;
+}
+.teams-button{
+  display: flex;
+  gap: 20px;
+}
+.smart--scheduling{
+  background-image: url(../src/routes/images/bg.png);
+  color: white;
+  margin-top: 4rem;
+}
+.smart-h2{
+     font-size: 3.125rem;
+    line-height: 1.2;
+    font-weight: 900;
+    text-align: center;
+    color:white;
+    margin-bottom: 40px;
+}
+.smart-p{
+    text-align: center;
+    color: white;
+    font-size: 1.3rem;
+    line-height: 1.4;
+    font-weight: 400;
+    padding-block: 2rem;
+}
